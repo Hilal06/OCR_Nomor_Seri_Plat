@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/cameraFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.ocrnomorseriplat.ui.fragment.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputFragment"
+        android:name="com.example.ocrnomorseriplat.ui.fragment.input.InputFragment"
+        android:label="fragment_input"
+        tools:layout="@layout/fragment_input" />
+    <fragment
+        android:id="@+id/vehicleFragment"
+        android:name="com.example.ocrnomorseriplat.ui.fragment.vehicle.VehicleFragment"
+        android:label="fragment_vehicle"
+        tools:layout="@layout/fragment_vehicle" />
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.example.ocrnomorseriplat.ui.fragment.camera.CameraFragment"
+        android:label="CameraFragment"
+        tools:layout="@layout/fragment_camera">
+        <action
+            android:id="@+id/action_cameraFragment_to_vehicleFragment"
+            app:destination="@id/vehicleFragment" />
+        <action
+            android:id="@+id/action_cameraFragment_to_inputFragment"
+            app:destination="@id/inputFragment" />
+    </fragment>
+</navigation>
