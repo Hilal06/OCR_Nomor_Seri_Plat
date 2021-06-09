@@ -1,7 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">OCR Nomor Seri Plat</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fab_camera">fab_camera</string>
     <string name="button_back">Button Back</string>
     <string name="input_manual">Input Manual</string>
